@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <h1>hello</h1>
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque magnam quidem eum ratione assumenda perspiciatis eaque ullam tempora ab unde nihil aperiam dignissimos, inventore dicta at rem voluptas dolores doloribus.</p>
+     <button type="button" class="btn">Click</button>
+     <script>
+           document.querySelector("h1").innerText = "New Title";
+          let btn = document.querySelector(".btn");
+          btn.addEventListener("click",function(){
+               btn.innerText = "Welcome Roxi bhai";
+           });
+          btn.addEventListener("mouseover",function(){
+               btn.innerText = "Most welcome Rahat Bhai";
+           });
+          btn.addEventListener("dblclick",function(){
+               btn.innerText = "Cha khauyabe";
+           });
+           
+     </script>
+</body>
+</html>

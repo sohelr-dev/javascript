@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <button type="button" onclick="openWindow()">New Window</button>
+     <script>
+          function openWindow(){
+               // window.open("dom-structure.html");
+               // window.open("https://www.w3schools.com/js/js_htmldom.asp" ,"width =400","height=400");           //open hoi new window but onek kharap upai
+
+               // window.open("https://www.w3schools.com/js/js_htmldom.asp" ,"_blank","width =400,height=400");         //open new window
+
+               let newWindow= window.open("", "","width=600 ,height=700");      //open new window
+               newWindow.document.writeln("<h1> Hello World</h1> <br> <br> <br> <br>");
+               newWindow.document.writeln("<button type='button' onclick='window.close()'> Close window</buttom>");
+
+          }
+     </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+            //i= jekhane ache sobkhan thake khusbe, i=
+
+        console.log("Search : " + "Javascript".search(/bsctipt/i));         //only index number show kore 
+        console.log("Replace : " + " we are learning Javascript".replace(/javascript/gi, "PHP"));        //replace korte 
+        console.log("7 plus 8 equals 15".match(/\d+/g));
+        let regexp= /\d+/gi;                //ekta ekta kore kaj kore 
+        console.log(regexp.exec("7 plus 8 equals 15"));
+        console.log(regexp.exec("7 plus 8 equals 15"));
+        console.log(regexp.exec("7 plus 8 equals 15"));
+    </script>
+</body>
+</html>

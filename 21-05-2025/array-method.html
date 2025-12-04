@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr =[1,2,3,4,5,6,7];
+        // let fill =arr.filter(element => element % 2==0);  //filter syntex
+        // let fill =arr.filter((element,index) => {return index % 2 ==0}); //filter syntex //index number or element number ke divide kore dekha
+        // let fill =arr.filter((x,y) => {return x % 2 ==0});   //x=element name and y= index number , element ke divide kore hoyeche only je gula 2 t divide kora jai 
+        let fill = arr.filter((e,i) => i == 4 || i==6 );
+        console.log(fill)
+
+        //only 4 dara divide kora
+        let arr2 =[20,3,36,100,107];
+        let result =arr2.filter(x => x % 4 ==0 );
+        console.log(result)
+
+        //only 4 dara divide kora
+        let arr3 =[20,30,36,100,107];
+        let resul1 =arr3.filter((e,i) =>{
+            if(i==0) return false;
+            else if (i==3 ) return false;
+            else return true;
+        } );
+        console.log(resul1)
+
+
+        let a =['apple', 'banana', 'cherry', 'data','elderbarry']
+        let res = a.filter((x,y) => x.length > 5 )
+        console.log(res)
+
+
+        let k= [12354,1000];
+        console.log (k.length)
+    </script>
+</body>
+</html>

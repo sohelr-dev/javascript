@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function abc(a,b){
+            //document.writeln('abc');
+            let arr =new Array();
+            arr.push(a+b);
+            arr.push(a-b);
+            arr.push(a*b);
+            arr.push(a/b);
+            return arr;
+        }
+        document.writeln(abc(50,6));
+        console.log(abc(50,6));
+        document.writeln("<br>");
+
+        //basic  ()=>{}
+        let fun = (a,b) => {return a+b};
+        let fun1 = a => {return a};
+        let fun2 = () => {return "ok"};
+
+        document.writeln("<br>" + fun(36,45));
+        document.writeln("<br>" + fun1(45));
+        document.writeln("<br>" + fun2(45));
+        console.log("<br>" + fun2(36,45));
+
+
+    </script>
+</body>
+</html>

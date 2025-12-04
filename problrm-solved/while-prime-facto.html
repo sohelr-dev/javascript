@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //user negative number na dauya pojonto sum hobe
+
+        // let num = parseInt(prompt(""));
+        // let sum = 0; //parseInt(prompt("Enter Number "))
+        // while(num > 0){
+        //     sum +=num;
+        //     num =parseInt(prompt("Enter Number "));
+        // } document.writeln("total sum " + sum + "<br> last number " + num)
+        
+        //factorial number
+        //  let a =5 ;
+        //  fact =1;
+        //  for ( let x =1; x <=a ; x++){
+        //      fact = fact*x;
+        //  }document.writeln(fact);
+
+
+        //prime number 
+
+        let a = parseInt(prompt("Enter Number "));
+        let Isprime = "is prime";
+        if(a <= 1){
+            Isprime= "is not prime";
+        }else{
+            for (let b =2 ; b < a; b++){
+                if( a % b ==0){
+                    Isprime = "is not prime";
+                    break;
+                }
+            }
+        }
+        document.writeln( a + Isprime);
+
+    </script>
+</body>
+</html>

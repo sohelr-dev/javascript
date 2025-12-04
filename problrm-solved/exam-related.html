@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //maximum among three numbers
+
+        // let x =parseInt(prompt("Enter First Number "));
+        // let y=parseInt(prompt("Enter First Number "));
+        // let z =parseInt(prompt("Enter First Number "));
+        // if( x > y && y > z ){
+        //     document.writeln("First Number Is largest : " + x);
+        // }else if ( y> z  && y > x){
+        //     document.writeln("Second Number Is Largest : " + y);
+        // }else{
+        //     document.writeln("Thirt Number Is largest : " + z);
+        // }
+
+        //even & odd number
+
+        // let x = parseInt(prompt("Enter Number "));
+        // if( x % 2 ==0){
+        //     document.writeln(" Even Number : " + x);
+        // }else{
+        //     document.writeln(" Odd Number : " + x)
+        // }
+
+        //counting vowels, consonants and show the occurrence
+
+        // let text = prompt("Enter text");
+        // text =text.toLowerCase();
+        // let vowelCount = 0 
+        // let consonantCount =0 ;
+        // for( let a =0; a< text.length; a++ ){
+        //     // document.writeln(text);  //for chack string
+        //     let character = text[a];
+        //     if(character >="a" && character<= "z"){
+        //         if(character ==="a" || character ==="e" || character ==="i" || 
+        //         character ==="o" || character ==="u"){
+        //             vowelCount++;   //vowel ar hoile count korbe
+        //         }else{
+        //             consonantCount++;  //consonate hoile count korbe
+        //         }
+        //     }
+        // }
+        // document.writeln("Totall vowels " + vowelCount + "<br>");
+        // document.writeln("Totall Consonant " + consonantCount + "<br>");
+
+
+        //50% marks is graded “B”, if gets 60% is graded “A”,
+        //if gets 90% then get A+
+
+        // let num = parseInt(prompt(" Enter Your Mark "));
+        // if(num >= 90){
+        //     document.writeln( num + " A+ ")
+        // }else if(num >=60){
+        //     document.writeln(num + " A ");
+        // }else if ( num >= 50){
+        //     document.writeln(num + " B ");
+        // }else{
+        //     document.writeln(num + ' F ')
+        // }
+
+
+        //Count positives, negatives, zero & sum in array
+
+        // let data = [4, 4, -4, -1, 0, -8, 0, 45, 9, 79];
+        // let positive =0 ,negative = 0, zero =0, sum= 0;
+        // for(let num of data){
+        //     sum +=num;
+        //     // document.writeln(num);
+        //     if(num >0){
+        //         positive++;
+        //         // document.writeln("positive <br>" +num );
+        //     }else if(num<0){
+        //         negative++;
+        //         // document.writeln("negaive <br>"+ num);
+        //     }else{
+        //         zero++;
+        //         // document.writeln("positive <br>" + num)
+        //     }
+        // }
+        // document.writeln("Positive digit :" +positive + "<br>")
+        // document.writeln("Negative digit :" +negative + "<br>")
+        // document.writeln("Zero digit :" + zero + "<br>")
+        // document.writeln("Sum :" + sum + "<br>")
+
+
+        //Find smallest, largest & sum up array
+
+        // let arr = [4, 4, -4, -1, 0, -8, 0, 45, 9, 79];
+        // let sm = arr[0], lg =arr[0], sum =0;
+        // for (let x =0; x <arr.length; x++){
+        //     // document.writeln(x);
+        //     let num =arr[x];
+        //     sum = sum + num;
+        //     if(num < sm){
+        //         sm =num;
+        //     }else if(num >lg ){
+        //         lg =num;
+        //     }
+        // }
+        // document.writeln( "smallest : " + sm +"<br>");
+        // document.writeln( "largest " + lg +"<br>");
+        // document.writeln( "sum " + sum +"<br>");
+        
+        //Descending Order 3 number //lg to sm
+
+        // let a =parseInt(prompt("Enter First Number "));
+        // let b =parseInt(prompt("Enter First Number "));
+        // let c =parseInt(prompt("Enter First Number "));
+        // if( a>=b && a >=c){
+        //     if( b>=c){
+        //         document.writeln(a +" ," + b + "," + c)
+        //     }else{
+        //         document.writeln(a +" ," + c + "," + b)
+        //     }
+        // }else if (b>=c && b>=c){
+        //     if(a>=c){
+        //         document.writeln(b +" ," + a + "," + c)
+        //     }else{
+        //         document.writeln(b +" ," + c + "," + a)
+        //     }
+        // }else{
+        //     if(a>=b){
+        //         document.writeln(c +" ," + a + "," + b)
+        //     }else{
+        //         document.writeln(c +" ," + b + "," + a)
+        //     }
+        // }
+
+        //Ascending Order //sm to lg
+
+        let a =parseInt(prompt("Enter First Number "));
+        let b =parseInt(prompt("Enter First Number "));
+        let c =parseInt(prompt("Enter First Number "));
+        if( a>=b && a >=c){
+            if( b>=c){
+                document.writeln(c +" ," + b + "," + a)
+            }else{
+                document.writeln(c +" ," + a + "," + b)
+            }
+        }else if (b>=c && b>=c){
+            if(a>=c){
+                document.writeln(c +" ," + a + "," + b)
+            }else{
+                document.writeln(b +" ," + c + "," + a)
+            }
+        }else{
+            if(a>=b){
+                document.writeln(b +" ," + c + "," + a)
+            }else{
+                document.writeln(a +" ," + b + "," + c)
+            }
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

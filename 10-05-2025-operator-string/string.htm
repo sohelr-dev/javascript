@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let s = "hello, world";
+        document.writeln(s.substring(0, 6) +"<br>");
+        document.writeln(s.slice(2, 5) +"<br>");
+        document.writeln(s.slice(-5) +"<br>");
+        document.writeln(s.slice(5,10) +"<br>");
+
+        let m = "New Round Strart i am"
+        document.writeln(m .split(" "));
+        document.writeln(s.slice(-5) +"<br>");
+        document.writeln(m .split("r"));
+        console.log(m .split("strart"));
+        document.writeln("<br><br>")
+
+        let lower = m.toLowerCase();
+        let slug = lower.replaceAll(" ","-")
+        document.writeln(slug + "<br>");
+
+        r = m.replace("i","we");
+        document.writeln(r + "<br>");
+
+        r = r.replace("New","we");
+        document.writeln(r + "<br>");
+
+
+    </script>
+</body>
+</html>

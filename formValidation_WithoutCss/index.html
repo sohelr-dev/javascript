@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="regForm" action="">
+            <div>
+                <label for="username">Name<span style="color: red;">*</span><br></label>
+                <input type="text" name="name">
+                <span style="color: red;"></span>
+            </div>
+            <div>
+                <label for="comment">Enter your comment <br></label>
+                <textarea name="comment"></textarea>
+                <span style="color: red;"></span>
+            </div>
+            <div>
+                <label for="email">Enter Your Email <br></label>
+                <input type="text" name="email" >
+                <span style="color: red;"></span>
+            </div>
+            <div>
+                <label for="gender">Gender<br></label>
+                <div>
+                    <input type="radio" name="gender" value="male">Male
+                </div>
+                <div>
+                    <input type="radio" name="gender" value="female">FeMale
+                </div>
+                <span class="gender_error" style="color: red;"></span>
+            </div>
+            <div>
+                <label for="password">Password<br></label>
+                <input type="text" name="password" >
+                <span style="color: red;"></span>
+            </div>
+            <div>
+                <label for="comfirmpassword">Comfirm Password<br></label>
+                <input type="text" name="comfirmpassword" >
+                <span style="color: red;"><br></span>
+                <br>
+            </div>
+            <button type="submit" style="background-color: rgb(171, 171, 180);border-radius: 5px;">submit</button>
+        </form>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        new userForm(".regForm");
+    </script>
+</body>
+</html>

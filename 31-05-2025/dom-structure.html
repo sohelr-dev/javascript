@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <div>
+          <p class="para">para 1</p>
+          <p class="para">para 2</p>
+          <p class="para">para 3</p>
+          <p class="para">para 4</p>
+          <p class="para">para 5</p>
+          <p class="para">para 6</p>
+          <p class="para">para 7</p>
+     </div>
+
+     <script>
+          // let div =document.querySelector("div");
+          // console.log(div.firstElementChild);
+          // console.log(div.lastElementChild);
+          // console.log(div.children[1]);
+          // console.log(div.children[4]);
+          // console.log(div.children[3]);
+
+          //children chara kono ekta p ke korte
+          // console.log(div.children[2].nextElementSibling.nextElementSibling);
+          // console.log(div.children[2].previousElementSibling);
+
+          let paras= document.querySelectorAll(".para")
+          // console.log(paras[1]);
+          // for(let item of paras){
+          //      console.log(item);
+          // }
+
+          for(let i=0; i<paras.length; i++){
+               console.log(paras);
+          }
+
+     </script>
+</body>
+</html>

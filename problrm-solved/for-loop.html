@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //random number
+        // let x =20;
+        // for(let a=1; x > a; a++){
+        //     document.writeln(a);
+        // }
+
+
+
+        //only odd number
+        // let x =20;
+        // for(let a=1; x > a; a++){
+        //     document.writeln(a);
+        //     a++;
+        // }
+
+
+
+        //only even number  //one type
+        // let x =20;
+        // for(let a=1; x > a; a++){
+        //     a++;
+        //     document.writeln(a);
+        // }
+
+
+
+        //only even number //second type
+        // let x =20;
+        // for(let a=2; x > a; a++){
+        //     document.writeln(a);
+        //     a +=1;
+        // }
+
+
+
+        //random number and sum(total)
+        // let x =20;
+        // let sum =0 ;
+        // for(let a=1; x >= a; a++){
+        //     document.writeln(a);
+        //     sum +=a;
+        //     if(a<20){
+        //         document.writeln("+")
+        //     }else{
+        //         // document.writeln( "=")  //ai comment ta on korle 52 no line e = bad dite hobe
+        //     }
+
+        // }document.writeln("=" + sum)
+
+
+
+        //square number
+
+        // for(let x =1; x<=9; x++){
+        //     // document.writeln(x);  //only for show 1--9
+        //     squ= x*x;
+        //     document.writeln(squ )
+        //     if(x <9){
+        //         document.writeln(",")  //commar jonno etutuku kora 61-62
+        //     }
+        // }
+
+
+
+        //print num 1-100
+        //if divide by 3 = fizz, 5= buzz, both=fizzbuzz
+        //solved //1st both count korbe than single condition
+
+        // for( let x = 1; x<=100; x++){
+        //     // document.writeln(x); //by cheack
+        //     if ( x % 3 ==0 && x % 5 ==0){
+        //         document.writeln(  x + '<br><b>FIZZBUZZ </b>') //b use for bold
+        //     }else if ( x % 3 ==0){
+        //         document.writeln("<i>FIZZ </i>" + x +"<br>")
+        //     }else if (x %5 ==0){
+        //         document.writeln("Buzz" + x + '<br>')
+        //     }else{
+        //         document.writeln(x +"<br>")
+        //     }
+        // }
+
+
+        //1-20 number print odd number using continue 
+
+        // for(let x = 1; x <= 20; x++){
+        //     // document.writeln(x);
+        //     if ( x % 2 ==0){
+        //         // document.writeln (x);  //only for show even number output
+        //         continue;
+        //     }else{
+        //         document.writeln(x);
+        //     }
+        // }
+
+
+        //1-30 number print skip that multiples of 3
+
+        // for (let x = 1; x <=30 ; x++){
+        //     // document.writeln(x);  //only show for 1-30 number
+        //     if( x % 3 ==0){
+        //         // document.writeln(x);   //show divide by 3 number
+        //         continue;     //for skip ar jonno
+        //     }else{
+        //         document.writeln(x)
+        //     }
+        // }
+
+
+        //star 
+
+        // for(let x = 1; x<=5; x++){
+        //     document.writeln("***** <br>");
+        //     }
+
+        //by defult (star)
+        // for( x = 1 ; x <=5 ; x++){
+        //     document.writeln("*" .repeat(5) + "<br>")
+        // }  
+
+        // incrising one by one (star)
+
+        //  for( x = 1 ; x <=5 ; x++){
+        //   document.writeln("*" .repeat(x) + "<br>")
+        //  }
+
+        //discrising one by one (star)
+
+        //  for( x = 5 ; x >=1 ; x--){
+        //   document.writeln("*".repeat(x) + "<br>")
+        //  }
+
+
+        for(let i=1; i<=5; i++){
+            document.writeln("*****");
+            document.writeln("<br>");
+        }
+        document.writeln("<br>------------<br>");
+        for(let i=1; i<=5; i++){
+            for(let j=1; j<=i; j++){
+                document.write("*");
+            }
+            document.writeln("<br>");
+        }
+        document.writeln("<br>------------<br>");
+        for(let i=1; i<=5; i++){
+            for(let j=5; j>=i; j--){
+                document.write("*");
+            }
+            document.writeln("<br>");
+        }
+
+
+    </script>
+</body>
+
+</html>
