@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <!-- switch to another page -->
+     <!-- <button type="button" onclick="window.location='https://www.oreilly.com/'">go to oreilly</button> -->
+      
+     <h1 id="title" style="height: 800px;">Title</h1>
+     <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eaque qui suscipit sequi repellendus nam reiciendis eius voluptatum. Quia, voluptate? Sed, error? Ex enim ea eaque minima dolorum consequatur iusto tempore quam minus accusamus, natus provident quod id? Vero officia, reiciendis reprehenderit quibusdam doloribus veritatis eius labore in quam suscipit!</p>
+
+
+
+     <h1>First Page</h1>
+     <script>
+          function redirect(){
+
+               // window.location ="https://www.prothomalo.com/"
+
+               location ="#title"
+          }
+          function redirect2(){
+               location = "#para"
+          }
+          setTimeout(redirect , 5000)
+          setTimeout(redirect2 , 10000)
+     </script>
+     
+</body>
+</html>

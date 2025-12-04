@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    class Person{
+        //  #age=pAge;
+        constructor(pName , pAge ){
+            this.name = pName;
+            this.age=pAge;
+        }
+        getpersonName(){
+            return this.name;
+        }
+        getPersonAge(){
+            return this.age;
+        }
+    }
+    class student extends Person {
+        constructor(yourName,yourAge,yourRoll, yourMarks){
+            super (yourName,yourAge);
+            this.roll= yourRoll;
+            this.marks= yourMarks;
+        }
+    }
+    const s1 = new student("Rahim",20, 101,90,50);
+    console.log(s1.name);
+    console.log(s1.age);
+    console.log(s1.roll);
+    console.log(s1.marks);
+    // console.log(s1.getpersonName());  //student class e parent ar kono kicu dekhte caile seto dekha jai , aivabe dekte hobe
+    // console.log(s1.getPersonAge());
+
+
+
+
+   </script> 
+</body>
+</html>

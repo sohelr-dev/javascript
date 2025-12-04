@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <!-- <h2 title="This is Roxi Rock" id="jfdj">Roxi Bhai</h2>
+     <input type="text" class="input1" title="Roxi vai faka kno">
+     <script>
+          let h2 = document.querySelector("h2");                    
+          console.log(h2.getAttribute("title"));                 //get kore 
+          h2.setAttribute("title", "This is Rahat Bro");         //set korlam //h2 ar title change 
+          h2.removeAttribute("id");                         //attribute remove kora like id remove
+          console.log(h2.hasAttribute("id"));
+
+          console.log(document.querySelector(".input1").getAttribute("type"));
+     </script>   -->
+
+     <!-- costom attribute -->
+
+     <h2 title="This is Roxi Rock" id="jfdj">Roxi Bhai</h2>
+     <input type="text" class="input1" title="Roxi vai faka kno">
+     <button type="button" data-id="145" data-name="Blue Shirt" data-price="1000" >Add to cart</button>
+     <button type="button" data-id="146" data-name="red Shirt" data-price="1300" >Add to cart</button>
+     <button type="button" data-id="147" data-name="white Shirt" data-price="1200">Add to cart</button>
+
+     <script>
+          
+         let cartBtn= document.querySelectorAll("button");
+     //     console.log(cartBtn.getAttribute("data-id"));
+         console.log(cartBtn.getAttribute("data-name"));
+     //     console.log(cartBtn.getAttribute("data-price"));
+
+     //     console.log(cartBtn.dataset.price)       //32 number ar shortcut 
+
+
+
+
+
+     </script>
+
+
+</body>
+</html>

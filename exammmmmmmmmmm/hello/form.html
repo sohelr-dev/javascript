@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<style>
+     .conatiner{
+          width: 200px;
+          margin: auto;
+          padding: 20px;
+          background-color: bisque;
+     }
+</style>
+<body>
+     <div class="conatiner">
+          <h3>Online Form </h3>
+          <form action="" class="onlineForm">
+               <label for="name">Name</label><br>
+               <input type="text" name="name" value="sohel Rana"><br>
+               <label for="contact">Contact</label><br>
+               <input type="text" name="contact" value="01580919769"><br>
+               <label for="remark">Remark</label><br>
+               <textarea name="remark" >Ok</textarea><br>
+               <label for="sex">Gender</label><br>
+               <input type="radio" name="sex" value="Male">
+               <label for="male">Male</label>
+               <input type="radio" name="sex" value="Female">
+               <label for="female">Female</label><br>
+               <label for="courses">Courses</label><br>
+               <input type="checkbox" name="courses" value="Html">
+               <label for="html">Html</label>
+
+               <input type="checkbox" name="courses" value="Css">
+               <label for="css">Css</label><br>
+
+               <input type="checkbox" name="courses" value="Java">
+               <label for="java">Java</label><br>
+               <label for="lcation">Location</label><br>
+               <select name="location" >
+                    <option value="Banani">Banani</option>
+                    <option value="Dhanmonti">Dhanmonti</option>
+                    <option value="Mirpur">Mirpur</option>
+               </select><br><br>
+               <button type="submit">Submit</button>
+
+          </form>
+     </div>
+     <script src="script.js"></script>
+     <script>
+          new OnLi (".onlineForm");
+     </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     <style>
+          .pass-wrap{
+               width: 195px;
+               border: 1px solid lightgray;
+               border-radius: 5px;
+               position: relative;
+               padding: 3px;
+          }
+          .pass-wrap input{
+               width: 150px;
+               padding: 5px;
+               border: none;
+               outline: none;
+          }
+          .pass-wrap i{
+               cursor: pointer;
+               margin-top: 5px;
+          }
+          #hide{
+               display: inline-block;
+          }
+          #show{
+               display: none;
+          }
+     </style>
+</head>
+<body>
+     <div class="pass-wrap">
+          <input type="password"  id="pass">
+          <i class="fa-solid fa-eye-slash" id="hide" onclick="showPass()"></i>
+          <i class="fa-solid fa-eye" id="show" onclick="hidePass()"></i>
+     </div>
+     <script>
+          let pass =document.getElementById("pass");
+          let hideBtn = document.getElementById("hide");
+          let showBtn =document.getElementById("show");
+          function showPass (){
+               hideBtn.style.display = "none";
+               showBtn.style.display ="inline-block";
+               pass.type="text"
+          }
+          function hidePass (){
+               hideBtn.style.display = "inline-block";
+               showBtn.style.display ="none";
+               pass.type="password";
+          }
+     </script>
+</body>

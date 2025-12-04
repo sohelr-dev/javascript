@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        1. Arithmetic Operators
+        Operator	Description	Example
+        +	Addition	a + b
+        -	Subtraction	a - b
+        *	Multiplication	a * b
+        /	Division	a / b
+        %	Modulus (Remainder)	a % b
+        **	Exponentiation	a ** b
+        ++	Increment	a++ or ++a
+        --	Decrement	a-- or --a
+        */
+
+        let x = 15;
+        document.writeln(x + "<br>")
+        x++; //or x = x+1;
+        document.writeln(x + "<br>")
+        //or
+        document.writeln(x++ +"<br>"); //shudu age print korbe
+        document.writeln(++x +"<br>")
+        document.writeln(x + "<br>") //or
+
+        /* 
+        2. Assignment Operators
+            Operator	Description	Example
+            =	Assign	a = b
+            +=	Add and assign	a += b
+            -=	Subtract and assign	a -= b
+            *=	Multiply and assign	a *= b
+            /=	Divide and assign	a /= b
+            %=	Modulus and assign	a %= b
+            **=	Exponentiate and assign	a **= b        
+        */
+        document.writeln("==================<br>")
+        let a = 5;
+        a += 7; //a ar shate 7 addition
+        // a = a + 7;
+        document.writeln(a + "<br>");
+        a += 7;
+        document.writeln(a + "<br>");
+        a += 1;
+        document.writeln(a + "<br>");
+        a -= 5;
+        document.writeln(a + "<br>");
+
+
+        /*
+        3. Comparison Operators
+            Operator	Description	Example
+            ==	Equal to (loose)	a == b
+            ===	Equal to (strict)	a === b
+            !=	Not equal (loose)	a != b
+            !==	Not equal (strict)	a !== b
+            >	Greater than	a > b
+            <	Less than	a < b
+            >=	Greater than or equal to	a >= b
+            <=	Less than or equal to	a <= b
+        */
+
+        document.writeln("==================<br>")
+
+        let b = 6 , c = "6";
+        document.writeln(b == c); //only vale compare kore
+        document.writeln("<br>")
+        document.writeln(b === c); // vale and type 2tai compare kore
+        document.writeln("<br>")
+        document.writeln("<br>")
+        document.writeln("<br>")
+        document.writeln("<br>")
+        document.writeln("<br>")
+
+        document.writeln(b != c); //only vale compare kore !=(mean not equal) 
+        document.writeln("<br>")
+        document.writeln(b !== c); // vale and type 2tai compare kore !=(mean not equal)
+        document.writeln("<br>")
+
+        document.writeln("==================<br>")
+
+        /*
+        4. Logical Operators
+            Operator	Description	Example
+            &&	Logical AND	a && b
+            `		`
+            !	Logical NOT	!a
+
+        */
+        document.writeln(!true);  //(! means not)
+        document.writeln("<br>")
+        document.writeln(!(b > 2)); // true but ! eter jonno false
+        document.writeln("<br>")
+        document.writeln((b > 2) && (b<10) ); // && thake 2tai true hote hobe tahole true
+        document.writeln("<br>")
+        document.writeln((b > 2) || (b<10) ); // ||=or operataor thake jekono ekta true hole true hobe
+        document.writeln("<br>")
+        /*
+        5. Bitwise Operators                            //thouri
+            Operator	Description
+            &	AND
+            `	`
+            ^	XOR
+            ~	NOT
+            <<	Left shift
+            >>	Right shift
+            >>>	Unsigned right shift
+        */
+        document.writeln("==================<br>")
+        /*
+        7. Ternary Operator (?: means ternary operator)
+            Syntax	Description
+            condition ? expr1 : expr2	Returns expr1 if true, else expr2
+
+
+        */
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

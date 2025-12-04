@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <script>
+          let userMail = prompt("Enter Email","sohel@gmail.com");
+          let reg =/^[a-zA-Z0-9_.]{2,}[@]{1}[a-zA-Z0-9-]{3,63}[.]{1}[a-z]{2,4}$/;
+          if(reg.test(userMail)==true){
+               document.writeln("Email Address is Right." + "<br>" + userMail);
+          }else{
+               document.writeln("Email Address is Wrong");
+          }
+     </script>
+</body>
+</html>
